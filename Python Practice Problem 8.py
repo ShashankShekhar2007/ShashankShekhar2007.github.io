@@ -1,7 +1,9 @@
 # False Multiplication Table
+from json.encoder import INFINITY
 import random
 from unicodedata import name
-from colorama import Fore, Back, Style
+
+from colorama import Back, Fore, Style
 from youtube_dl import main
 
 
@@ -17,8 +19,6 @@ def isCorrrect(table, num):
         if table[i] != num*(i+1):
             return i
     return None
-
-
 if __name__ == "__main__":
 
     number = int(input(
